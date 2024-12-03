@@ -1,0 +1,2 @@
+import re
+(e:=1),print(*[sum(int(a)*int(b) if a and b else 0 for a,b,c,d in re.findall(r'mul\((\d+),(\d+)\)|(do\(\))|(don\'t\(\))',open('03.txt').read()) if (e:=o or (1 if c else 0 if d else e))) for o in [1,0]])
